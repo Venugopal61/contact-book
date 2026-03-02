@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Book</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📒 Contact Book</h1>
+    <p id="contactCount">Total Contacts: 0</p>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search contacts..." />
+      <select id="sortSelect">
+        <option value="asc">Sort A–Z</option>
+        <option value="desc">Sort Z–A</option>
+      </select>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name *" required />
+      <input type="text" id="mobile" placeholder="Mobile *" required />
+      <input type="email" id="email" placeholder="Email (optional)" />
+      <button type="submit">Add Contact</button>
+    </form>
+
+    <div id="emptyState" class="empty">No contacts available.</div>
+
+    <div id="favouritesSection"></div>
+    <div id="contactsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
